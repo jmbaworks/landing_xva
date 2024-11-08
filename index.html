@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página en Construcción</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        overflow: hidden;
+      }
+      .video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+      }
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        height: 80%;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 48px;
+        margin: 20px 0;
+        color: #fff;
+      }
+      footer {
+        font-size: 14px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Video de fondo -->
+    <video class="video-bg" autoplay loop muted playsinline>
+      <source src="./video.webm" type="video/webm" />
+      Tu navegador no soporta video en formato .webm
+    </video>
+
+    <!-- Contenido -->
+    <div class="content">
+      <!-- Nav con logo -->
+      <header>
+        <div class="logo"></div>
+      </header>
+
+      <!-- Mensaje de construcción -->
+      <h3>Proximamente.</h3>
+
+      <!-- Footer -->
+      <footer>&copy; 2024 RBR. Todos los derechos reservados.</footer>
+    </div>
+  </body>
+</html>
